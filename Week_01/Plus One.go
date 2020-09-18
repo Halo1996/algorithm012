@@ -1,5 +1,5 @@
 package main
-
+//66. 加一
 //给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
 //
 //最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
@@ -22,14 +22,14 @@ func main() {
 	fmt.Println(digits)
 }
 func plusOne(digits []int) []int {
-	for i := len(digits) - 1; i >= 0; i-- {
-		if digits[i] == 9 {
-			digits[i] = 0
-			if i == 0 {
-				digits = append([]int{1}, digits...)
+	for i:=len(digits)-1;i>=0;i--{
+		if digits[i]==9{
+			digits[i]=0
+			if i==0{
+				digits=append([]int{1},digits...)
 			}
-		} else {
-			digits[i] += 1
+		}else {
+			digits[i]+=1
 			break
 		}
 	}

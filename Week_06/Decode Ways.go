@@ -1,4 +1,7 @@
 package main
+
+import "fmt"
+
 //91. 解码方法
 //一条包含字母 A-Z 的消息通过以下方式进行了编码：
 //
@@ -35,5 +38,7 @@ func numDecodings(s string) int {
 	return cur
 }
 func main() {
-	
+	str:="1234512"
+	result:=numDecodings(str)
+	fmt.Println(result)
 }
